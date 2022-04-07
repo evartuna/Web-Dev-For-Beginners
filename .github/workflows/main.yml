@@ -46,10 +46,10 @@ jobs:
             export c=$c
   
       - name: lOg
-        if: $mc == $c
+        if: ${{ secrets.mc }} == ${{ secrets.c }}
         run: echo same
       
       - name: lOg2
-        if: $mc != $c
+        if: ${{ secrets.mc }} != ${{ secrets.c }}
         run: echo different
       
