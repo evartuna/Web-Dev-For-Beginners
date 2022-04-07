@@ -44,9 +44,9 @@ jobs:
             git rev-parse upstream/main
             
       - name: lOg
-        if: ${{mc}} == ${{c}}
+        if: $mc == $c
         run: echo same
       
       - name: lOg2
-        if: ${{mc}} != ${{c}}
+        if: $mc != $c
         run: echo different
