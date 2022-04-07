@@ -33,3 +33,18 @@ jobs:
             git merge upstream/main
             git push
      
+      - name: comp 
+        run: |
+            read mc
+            git rev-parse main
+            
+            read c
+            git rev-parse upstream/main
+            
+      - name: lOg
+        if: $mc == $c
+        run: echo same
+      
+      - name: lOg2
+        if: $mc != $c
+        run: echo different
