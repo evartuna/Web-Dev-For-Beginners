@@ -41,7 +41,12 @@ jobs:
             read c
             git rev-parse upstream/main
             export c=$c
-            
+  
       - name: lOg
-        run: echo $mc
+        if: ${{mc}} == ${{c}}
+        run: echo same
+      
+      - name: lOg2
+        if: ${{mc}} != ${{c}}
+        run: echo different
       
