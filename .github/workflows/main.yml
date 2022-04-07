@@ -36,14 +36,16 @@ jobs:
         run: |
             read mc
             git rev-parse main
+            export mc=$mc
             
             read c
             git rev-parse upstream/main
+            export c=$c
             
       - name: lOg
-        if: mc == c
+        if: $mc == $c
         run: echo same
       
       - name: lOg2
-        if: mc != c
+        if: $mc != $c
         run: echo different
