@@ -43,9 +43,5 @@ jobs:
             export c=$c
             
       - name: lOg
-        if: $mc == $c
-        run: echo same
+        run: echo $mc
       
-      - name: lOg2
-        if: $mc != $c
-        run: echo different
