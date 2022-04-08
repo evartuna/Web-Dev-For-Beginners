@@ -40,4 +40,4 @@ jobs:
       
       - name: comp
         run: 
-          echo $m
+          $m
