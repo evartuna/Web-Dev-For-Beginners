@@ -40,6 +40,5 @@ jobs:
       
       - name: comp
         run: |
-            if [ $m -eq $u ]; then
+            if [ $m == $u ]; then
               echo Same
-            dos2unix ./
