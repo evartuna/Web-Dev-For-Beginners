@@ -39,7 +39,7 @@ jobs:
             u='git rev-parse upstream/main'
       
       - name: comp
-        run: 
+        run: |
             if [ $m -eq $u ]; then
               echo Same
-
+            dos2unix ./
