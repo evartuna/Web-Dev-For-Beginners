@@ -39,6 +39,5 @@ jobs:
             u='git rev-parse upstream/main'
       
       - name: comp
-        if: $m==$u
         run: 
-          echo same
+          echo $m
