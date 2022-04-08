@@ -41,4 +41,7 @@ jobs:
       - name: comp
         run: |
             if [ $m == $u ]; then
-              echo Same
+              echo "Same"
+            else
+              echo "Different"
+            fi
