@@ -38,6 +38,9 @@ jobs:
             read mcc
             git rev-parse main
             export mmcc=$mcc
+            
+      - name: comp2      
+        run: |    
             read ccc
             git rev-parse upstream/main
             export cc=$ccc
