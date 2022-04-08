@@ -35,13 +35,12 @@ jobs:
      
       - name: comp 
         run: |
-            read mc
+            read mcc
             git rev-parse main
-            export mc=$mc
-            
-            read c
+            export mmcc=$mcc
+            read ccc
             git rev-parse upstream/main
-            export c=$c
+            export cc=$ccc
   
       - name: lOg
         run: echo $USER
