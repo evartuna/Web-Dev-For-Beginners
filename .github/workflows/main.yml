@@ -42,7 +42,4 @@ jobs:
             git rev-parse upstream/main
             export cc=$ccc
   
-      - name: lOg
-        run: echo $USER
-
       
