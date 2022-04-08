@@ -41,7 +41,7 @@ jobs:
       - name: comp
         run: 
             if [ $m -eq $u ]; then
-              echo "Same"
+              echo Same
             else
-              echo "Different"
+              echo Different
             fi
