@@ -41,8 +41,8 @@ jobs:
         run: |
             if [ $m == $u ]; then
               echo "Same"
-            else;
-              git merge upstream/main;
-              git push;
-              echo "push";
+            else
+              git merge upstream/main
+              git push
+              echo "push"
             fi
