@@ -33,16 +33,12 @@ jobs:
             git merge upstream/main
             git push
      
-      - name: comp 
+      - name: ver 
         run: |
-            read mcc
-            git rev-parse main
-            export mmcc=$mcc
-            
-      - name: comp2      
-        run: |    
-            read ccc
-            git rev-parse upstream/main
-            export cc=$ccc
-  
+            m='git rev-parse main'
+            u='git rev-parse upstream/main'
       
+      - name: comp
+        if: $m==$u
+        run: 
+          echo same
